@@ -1,0 +1,20 @@
+n = int(input())
+
+right_sum = 0
+left_sum = 0
+
+for _ in range(n):
+    rught_num = int(input())
+    right_sum += rught_num
+
+
+for i in range(n):
+    left_num = int(input())
+    left_sum += left_num
+
+diff = abs(right_sum - left_sum)
+
+if right_sum == left_sum:
+    print(f"Yes, sum = {right_sum}")
+else:
+    print(f"No, diff = {diff}")
